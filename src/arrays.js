@@ -45,6 +45,7 @@ const uppercaseWordsInArray = strings => {
 
 const reverseWordsInArray = strings => {
 
+  //
 };
 
 
@@ -74,13 +75,13 @@ const removeSpaces = string => {
 
 const sumNumbers = numbers => {
   // let array = [numbers];
-
-  array.reduce((accumulator, currentValue, currentIndex, array) => accumulator + currentValue);
-}; //
+  // array.reduce((accumulator, currentValue, currentIndex, array) => accumulator + currentValue);
+};
 
 const sortByLastLetter = strings => {
-  let origArray =  ["Lannister", "Stark", "Greyjoy", "Targaryen"]
-  let splitArray = origArray.split("");
+  // reverse words in array 
+  // array .sort
+  // reverse back
 
 };
 
