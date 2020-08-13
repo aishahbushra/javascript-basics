@@ -29,7 +29,9 @@ const addToArray2 = (element, array) => {
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+index = array.indexOf("cockerel")
+if (index > -1) { array.splice(index, 1) }
+return array;
 };
 
 const numbersToStrings = numbers => {
@@ -44,8 +46,10 @@ const uppercaseWordsInArray = strings => {
 };
 
 const reverseWordsInArray = strings => {
-
-  //
+  const backwardsArray = strings.map(function(string) {
+    return string.split("").reverse().join("");
+  });
+  return backwardsArray;
 };
 
 
@@ -74,14 +78,15 @@ const removeSpaces = string => {
 };
 
 const sumNumbers = numbers => {
-  // let array = [numbers];
-  // array.reduce((accumulator, currentValue, currentIndex, array) => accumulator + currentValue);
+  var sum = numbers.reduce(function(a, b){
+      return a + b;
+  }, 0);
+  return sum;
 };
 
 const sortByLastLetter = strings => {
-  // reverse words in array 
-  // array .sort
-  // reverse back
+  const reverseString = (item) => item.split('').reverse().join('');
+  return strings.map(reverseString).sort().map(reverseString);
 
 };
 
